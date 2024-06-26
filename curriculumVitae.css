@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FCE4EC;
+    color: #880E4F;
+}
+
+header {
+    
+}
+
+nav {
+    background-color: #C2185B;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #880E4F;
+}
+
+.cabeçalho, .educacao, .certificacoes, .experiencia, .habilidades {
+    margin: 20px;
+    padding-top: 60px; 
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cabeçalho p {
+    margin: 5px 0;
+}
+
+.nome {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #880E4F;
+    text-align: center;
+}
+
+.email-cidade {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.email a{
+    text-decoration: none;
+    color: #880E4F;
+}
+
+.email a:hover{
+    color: white;
+}
+
+.texto {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #AD1457;
+    color: #880E4F;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #880E4F;
+}
+
+nav{
+    padding: 30px;
+}
+
+/* desktop */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+       text-align: center;
+       gap: 8px;
+    }
+
+    .cabeçalho {
+        text-align: center;
+    }
+
+    .cabeçalho .nome {
+        order: -1;
+    }
+
+    .cabeçalho .foto {
+        order: -1;
+    }
+
+    .cabeçalho .texto {
+        order: -1;
+    }
+
+    .cabeçalho .email,
+    .cabeçalho .cidade {
+        order: -1;
+    }
+
+    .email-cidade {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educacao, .certificacoes, .experiencia, .habilidades {
+        text-align: center;
+    }
+
+    nav{
+        padding: 15px;
+    }
+}
+
+/* celular */
+@media (min-width: 769px) {
+    .cabeçalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educacao, .certificacoes, .experiencia, .habilidades {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
